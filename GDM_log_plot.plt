@@ -17,7 +17,11 @@ set mouse format "%.0f"
 set mouse mouseformat 3
 #set mouse mouseformat "%F-%T, %.0f, %.0f"
 #set mouse nozoomcoordinates
+set xtics rotate by -10
+set ytics nomirror
 set y2tics nomirror
+set ylabel "RQ"
+set y2label "SATs"
 set style fill transparent solid 0.5 noborder
 set style line 1 lt rgb "#000000FF" lw 1 pt 6
 set style line 2 lt rgb "#8000FF00" lw 1 pt 4
