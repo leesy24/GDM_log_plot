@@ -2,6 +2,7 @@
 if "%~1"=="" goto ERROR_PARAM
 rem echo Current directory: %cd%
 rem echo Batch file's directory: %~dp0
+copy /y %~dp0\wgnuplot.ini %UserProfile%\AppData\Roaming\ > NUL
 
 echo Preparing data from %1 ...
 start /b /wait "" /realtime cmd.exe /C ^(findstr $PASHR %1 ^> %~dp0\log_.dat^)
